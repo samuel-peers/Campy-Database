@@ -1,4 +1,6 @@
 # Campy Database
+Forked for the purposes of displaying what part I contributed to this project.
+
 A triplestore database for the epidemiological and biological data related to the bacteria Campylobacter Jejuni. Also a web application for adding and updating data (including batch upload, though still working on that), querying data, and soon visualizations and analytics. 
 Meant to run on a Blazegraph server with the namespace `campy`.
 `Sripts/csvToDB.py` serves the purpose of cleaning and making triples out of legacy data that is stored on a csv
