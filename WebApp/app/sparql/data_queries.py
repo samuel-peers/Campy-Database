@@ -47,7 +47,7 @@ def getIsoNames(species=None):
                    hasIsoName="hasIsolateName",
                    hasSpecies=has_species,
                    hasLit=("hasLiteralValue"))
-
+    print q
     result = trimResult(e.query(q))
 
     return result

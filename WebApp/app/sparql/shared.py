@@ -5,11 +5,13 @@
 
 """
 
+from Scripts import endpoint as e
+
 ####################################################################################################
 # GLOBAL VARIABLES
 ####################################################################################################
 CPREFIX =\
-"prefix :<https://github.com/campy-db/Campy-Database/blob/master/Ontologies/CampyOntology.owl#>"
+"prefix :<https://github.com/samuel-peers/campyOntology/blob/master/CampyOntology.owl#>"
 LITPREFIX = "prefix lit:<http://www.essepuntato.it/2010/06/literalreification/>"
 
 ####################################################################################################
@@ -19,7 +21,7 @@ LITPREFIX = "prefix lit:<http://www.essepuntato.it/2010/06/literalreification/>"
 # t - The triple to be inserted.
 ####################################################################################################
 def writeToBG(t):
-    print "insert data{{{}}}".format(t)
+    e.update("insert data{{{}}}".format(t))
 
 ####################################################################################################
 # Returns a list of lists, where the lists are all the bindings for the vars in the query. EG if we

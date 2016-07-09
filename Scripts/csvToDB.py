@@ -19,7 +19,6 @@ from .tripleWriters.campyTM import CAMPY as ctm
 # insterted into blazegraph.
 ####################################################################################################
 def writeToOnt(t):
-
     with open("/home/student/Campy/CampyDatabase/Ontologies/CampyOntology.owl", "a") as w:
         w.write(t)
 

@@ -7,6 +7,7 @@ from flask import request, session, redirect, render_template, flash, url_for
 from werkzeug import secure_filename
 from app import app, ALLOWED_EXTENSIONS
 from .sparql import data_queries as dq
+from .sparql import shared as sh
 from .forms import AddForm, IsoNameForm, FilterIsoForm
 import app.form_to_triple as ft
 import app.BatchUploader as Uploader
@@ -33,8 +34,8 @@ def add():
 
     if form.validate_on_submit():
         triple = ft.formToTriple(form)
-        #q.writeToBG(triple)
-        print triple
+        sh.writeToBG(triple)
+        #print triple
         flash("Isolate added")
         return redirect("/index")
 
@@ -96,9 +97,12 @@ def names():
     if form.validate_on_submit():
         species = form.species.data
         isos = dq.getIsoNames(species=species)
+        isos = [isos] if not isinstance(isos, list) else isos
         return render_template("names.html", title="Isolate Names", isos=isos, form=form)
 
     isos = dq.getIsoNames()
+    print isos
+    isos = [isos] if not isinstance(isos, list) else isos
     return render_template("names.html", title="Isolate Names", isos=isos, form=form)
 
 ####################################################################################################
