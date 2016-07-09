@@ -6,13 +6,13 @@
 """
 
 import sys
-sys.path.append("/home/student/Campy/CampyDatabase")
+sys.path.append("/home/samboy/Campy-Database")
 
 from Scripts import endpoint as e
 from Scripts import TripleMaker as tm
 from Scripts.tripleWriters.campyTM import CAMPY as CTM
 from Scripts.tripleWriters.labTM import LAB as LTM
-from .shared import *
+from .shared import CPREFIX, LITPREFIX, trimResult
 from ..shared.extractValue import getSpecies
 
 ####################################################################################################

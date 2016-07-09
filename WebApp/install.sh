@@ -21,4 +21,6 @@ if ! find flask/bin/pip; then
     flask/bin/pip install _app_ctx_stack
     flask/bin/pip install pycountry
     flask/bin/pip install pandas
+    flask/bin/pip install requests
+    flask/bin/pip install SPARQLwrapper
 fi
