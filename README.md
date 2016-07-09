@@ -1,5 +1,5 @@
 # Campy Database
-Forked for the purposes of displaying what part I contributed to this project.
+Forked for the purposes of displaying what part I contributed to this project. All code here was written by me, with the exception of endpoint.py.
 
 A triplestore database for the epidemiological and biological data related to the bacteria Campylobacter Jejuni. Also a web application for adding and updating data (including batch upload, though still working on that), querying data, and soon visualizations and analytics. 
 Meant to run on a Blazegraph server with the namespace `campy`.
