@@ -1,5 +1,5 @@
 # Campy Database
-Forked for the purposes of displaying what part I contributed to this project. All code here was written by me, with the exception of `endpoint.py`.
+Forked for the purposes of displaying what part I contributed to this project. All code here was written by me, with the exception of `endpoint.py`, also some refactoring was done by others.
 
 A triplestore database for the epidemiological and biological data related to the bacteria Campylobacter Jejuni. Also a web application for adding and updating data (including batch upload, though still working on that), querying data, and soon visualizations and analytics. 
 Meant to run on a Blazegraph server with the namespace `campy`.
@@ -21,7 +21,7 @@ around it. It imports `LabTests.owl`.
 - The web app should now be running locally on `port 5000`.
 
 At this point, you can run a query that fetches the names of all the isolates in the database by clicking the `names` 
-link (and also filter by species), and you can add data to the database by clicking the `add isolate` link (though right now it just prints the triple to the terminal; we're still in the testing stages). The `upload` page allows you to upload a csv file. After uploading, the web app will try to make triples from the data. If the column names and data are of the correct format, triples will be made and printed to the terminal, but right now it only does the source and strain name data.
+link (and also filter by species), and you can add data to the database by clicking the `add isolate` link (though right now it just prints the triple to the terminal; we're still in the testing stages).
 
 Have fun.
 
