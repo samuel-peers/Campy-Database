@@ -23,6 +23,6 @@ around it. It imports `LabTests.owl`.
 At this point, you can run a query that fetches the names of all the isolates in the database by clicking the `names` 
 link (and also filter by species), and you can add data to the database by clicking the `add isolate` link (though right now it just prints the triple to the terminal; we're still in the testing stages).
 
-Have fun.
+Have lots of fun.
 
 
